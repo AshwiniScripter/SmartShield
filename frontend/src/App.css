@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f6fa;
+    margin: 0;
+    padding: 0;
+
+    /* Center container horizontally and vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* full viewport height */
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    background-color: #718093; /* your chosen background */
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+h1 {
+  color: #2f3640;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.cards-row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex: 1; /* take some width */
+  justify-content: center;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  flex: 1; /* equal width */
+  min-width: 180px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.card h2 {
+  color: #718093;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 2em;
+  color: #2f3640;
+  margin: 0;
+}
+
+/* Optional: Highlight Latest Request IP card */
+.card.latest-ip p {
+  color: #e84118; /* red text to make it stand out */
+}
+
+.chart-container {
+  flex: 2; /* chart takes more space */
+  min-width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.ip-lists {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.ip-table {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  width: 45%;
+}
+
+.ip-table h3 {
+  margin-bottom: 10px;
+  color: #2f3640;
+}
+
+.ip-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ip-table th, .ip-table td {
+  border: 1px solid #dcdde1;
+  padding: 8px;
+  text-align: center;
+}
+
+.ip-table th {
+  background-color: #f1f2f6;
+}
