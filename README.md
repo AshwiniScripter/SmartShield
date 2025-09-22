@@ -19,8 +19,10 @@ A real-time dashboard to detect and block suspicious IPs making excessive reques
 
 - **Frontend:** React, Axios, Chart.js  
 - **Backend:** Node.js, Express.js  
-- **Database:** MySQL (with `mysql2`)  
-
+- **Database:** MySQL (with `mysql2`)
+---
+![Dashboard](Assets/Dashboard.png)
+---
 ---
 ### 1. Clone the repository
 ```bash
